@@ -30,8 +30,6 @@ from dotenv import load_dotenv
 load_dotenv()  # Loads variables from .env
 
 API_KEY = os.getenv("OPENAI_API_KEY")
-
-# ---- local import: your activity screen module ----
 try:
     from biotech_activity_screen import screen_activity_for_tickers
 except Exception as e:
