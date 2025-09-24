@@ -1,12 +1,4 @@
-"""
-biotech_activity_screen.py
---------------------------
-Find small/mid-cap biotechs actively developing a new treatment (phase-agnostic)
-AND optionally generate a short OpenAI blurb grounded in CT.gov + RSS evidence.
 
-Requires:
-  pip install requests feedparser pandas yfinance openai
-"""
 
 from __future__ import annotations
 import re, time, json, requests, feedparser
@@ -14,7 +6,6 @@ from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime, timedelta
 import pandas as pd
 import yfinance as yf
-# add near your other imports
 try:
     from bs4 import BeautifulSoup
 except Exception:
